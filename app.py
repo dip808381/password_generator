@@ -8,7 +8,7 @@ def classifierA():
     if request.method == "POST":
         val = request.form.get("nm")
         out = pwrd(val)
-        return render_template("login.html",out="The Predicted Salary Is:"+ out)
+        return render_template("login.html",out="Your Password Is:"+ out)
 
     return render_template("login.html",out="")
 

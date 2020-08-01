@@ -4,8 +4,10 @@ def pwrd(inp):
     lis = []
     for i in inp:
         if i == ' ':continue
+        if i not in dic1:
+            dic1[i]=i
         lis.append(dic1[i.lower()])
     org = "".join(lis)
     return org
 if __name__ == "__main__":
-    print(pwrd('dipesh'))
+    print(pwrd('dipesh@1234'))
